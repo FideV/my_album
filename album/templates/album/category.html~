@@ -1,0 +1,12 @@
+<h1>ALBUM</h1>
+
+<h2>Category</h2>
+
+<div>
+    {% for c in object_list %}
+	<a href="{% url 'category-detail' c.pk %}">
+	    {{ c.name }}
+	</a>
+    {% endfor %}
+</div>
+
